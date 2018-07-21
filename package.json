@@ -1,0 +1,16 @@
+{
+  "name": "soy-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Example of how to use soy compiler within a webpack project",
+  "main": "index.js",
+  "directories": {},
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "@atlassian/atlassian-soy-loader": "^2.2.0"
+  },
+  "scripts": {},
+  "author": "gerro_den@gmx.de",
+  "license": "ISC"
+}
