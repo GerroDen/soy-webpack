@@ -8,9 +8,7 @@
   "devDependencies": {
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0",
-    "soynode": "^2.1.0",
-    "soyutils": "^3.0.0",
-    "@atlassian/atlassian-soy-loader": "^2.2.0"
+    "soynode": "^2.1.0"
   },
   "scripts": {},
   "author": "gerro_den@gmx.de",
