@@ -1,23 +1,30 @@
 const path = require('path');
 
+var outputDir = path.resolve(__dirname, 'dist');
+
 module.exports = {
   entry: './src/hello-world.js',
-  mode: 'production',
+  mode: 'development',
   devtool: 'source-map',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: outputDir,
     filename: 'bundle.js'
   },
   module: {
     rules: [{
       test: /\.soy/,
       use: {
-        loader: '@atlassian/atlassian-soy-loader',
+        loader: 'soy-loader',
         options: {
-          i18n: 'src/*.properties',
-          dontExpose: true
+          outputDir: outputDir
         }
       }
     }]
+  },
+  resolveLoader: {
+    modules: [
+      'node_modules',
+      path.resolve(__dirname, 'loaders')
+    ]
   }
 };
