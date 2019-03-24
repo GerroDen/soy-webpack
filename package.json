@@ -8,7 +8,8 @@
   "devDependencies": {
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "soynode": "^2.1.0"
+    "soynode": "^2.1.0",
+    "lodash": ">=4.17.11"
   },
   "scripts": {},
   "author": "gerro_den@gmx.de",
